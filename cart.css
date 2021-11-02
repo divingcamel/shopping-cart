@@ -1,0 +1,45 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2
+}
+th {
+    background-color: #04AA6D;
+    color: white;
+}
+img {
+    vertical-align: middle;
+}
+input[type="text"] {
+    width: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: inline-block;
+}
+/*
+.dec {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.inc {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.p-action {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+*/

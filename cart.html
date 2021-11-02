@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <title>購物車</title>
+  <link rel="stylesheet" type="text/css" href="cart.css">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="cart.js"></script>
+</head>
+<body>
+<!--選單-->
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" style="width: 70%;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">關於公司</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">商品商城</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="job.html">人力資源</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">聯絡我們</a>
+                </li>
+                </ul>
+                <div class="ms-auto">
+                    <a href="#" class="btn btn-outline-success">登入</a>
+                    <a href="cart.html" class="btn btn-outline-success">
+                        購物車<span class="badge bg-danger" id="mycnt">0</span>
+                    </a>
+                    <a href="#" class="btn btn-outline-success">結帳</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+<!--購物車-->
+<div class="container my-3">
+    <h2>購物車</h2>
+    <table>
+        <thead>
+            <tr>
+                <div class="form-check">
+                    <th><input type="checkbox" class="checkall">全選</th>
+                </div>
+                <th>商品</th>
+                <th>單價</th>
+                <th>數量</th>
+                <th>小計</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <!--
+            <tr class="p-item">
+                <td><input type="checkbox" class="j-check"></td>
+                <td><img src="images/dog01.jpg" width="100px"> Peter</td>
+                <td class="p-price">600</td>
+                <td class="p-num">
+                    <button class="dec btn btn-success">-</button>
+                    <input type="text" value="1" class="itxt">
+                    <button class="inc btn btn-success">+</button>
+                </td>
+                <td class="p-sum">600</td>
+                <td><button class="p-action btn btn-primary">刪除</button></td>
+            </tr>
+            <tr class="p-item">
+                <td><input type="checkbox" class="j-check"></td>
+                <td><img src="images/dog02.jpg" width="100px"> Lois</td>
+                <td class="p-price">1200</td>
+                <td class="p-num">
+                    <button class="dec btn btn-success">-</button>
+                    <input type="text" value="1" class="itxt">
+                    <button class="inc btn btn-success">+</button>
+                </td>
+                <td class="p-sum">1200</td>
+                <td><button class="p-action btn btn-primary">刪除</button></td>
+            </tr>
+            <tr class="p-item">
+                <td><input type="checkbox" class="j-check"></td>
+                <td><img src="images/dog03.jpg" width="100px"> Joe</td>
+                <td class="p-price">800</td>
+                <td class="p-num">
+                    <button class="dec btn btn-success">-</button>
+                    <input type="text" value="1" class="itxt">
+                    <button class="inc btn btn-success">+</button>
+                </td>
+                <td class="p-sum">800</td>
+                <td><button class="p-action btn btn-primary">刪除</button></td>
+            </tr>
+            <tr class="p-item">
+                <td><input type="checkbox" class="j-check"></td>
+                <td><img src="images/dog04.jpg" width="100px"> Cleveland</td>
+                <td class="p-price">1000</td>
+                <td class="p-num">
+                    <button class="dec btn btn-success">-</button>
+                    <input type="text" value="1" class="itxt">
+                    <button class="inc btn btn-success">+</button>
+                </td>
+                <td class="p-sum">1000</td>
+                <td><button class="p-action btn btn-primary">刪除</button></td>
+            </tr>
+            -->
+        </tbody>
+    </table>
+</div>
+<!--小計欄位-->
+<div class="container my-3">
+    <div class="row">
+        <div class="col-md-6">
+            <span class="p-amt">已經選了 <em>0</em> 件商品</span>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-3">小計:</div>
+                <div class="col-md-9 total"><em>0</em> 元</div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">含稅價:</div>
+                <div class="col-md-9 tax"><em>0</em> 元</div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">運費:</div>
+                <div class="col-md-9 tran"><em>0</em> 元</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
